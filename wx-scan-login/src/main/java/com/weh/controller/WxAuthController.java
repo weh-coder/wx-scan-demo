@@ -6,8 +6,8 @@ import com.weh.service.RedisService;
 import com.weh.util.CommonUtil;
 import com.weh.util.ParseXml;
 import com.weh.util.ParseXmlForWx;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
@@ -16,8 +16,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 
-@Controller
-@ResponseBody
+@Slf4j
+@RestController
 public class WxAuthController {
 
     @Autowired
@@ -29,7 +29,6 @@ public class WxAuthController {
 
     // 记录所有登录人的状态
     Map<String, Boolean> loginObj = new HashMap<>();
-//    Map<String, String> userInfo = new HashMap<>();
 
     @PostMapping("/conn")
     public JSONObject conn(HttpServletRequest req){
@@ -62,7 +61,7 @@ public class WxAuthController {
     }
 
     // 当用户用手机扫码时，微信服务器会通过post方法给我们传递数据
-    @PostMapping("/")
+    @PostMapping("/weh/callback")
     public String awaitData(@RequestBody ParseXmlForWx px){
         System.out.println("接收到的XML为："+px);
         String FromUserName = px.getFromUserName();
