@@ -6,7 +6,7 @@ import java.util.Random;
  * 微信公众号：weh程序猿
  *
  * @author weh-coder
- * @des 这是一个类
+ * @des 随机生成6位数的验证码
  * @date 2024/9/2
  */
 public class CommonUtil {
