@@ -9,7 +9,7 @@
 
 >后端运行后，则需一个公网【域名/Ip】
 
-![image-5](https://github.com/user-attachments/assets/89f8e3f8-5a9c-4b6c-81a0-e9f45f70696f)
+![image](https://github.com/user-attachments/assets/2ec05898-9e27-4c93-8a11-2d81c7cbb0fc)
 
 ## 实现效果
 
