@@ -8,7 +8,7 @@ import java.util.Arrays;
  * 微信公众号：weh程序猿
  *
  * @author weh-coder
- * @des 这是一个类
+ * @des 安全散列算法
  * @date 2024/9/3
  */
 public class SHA1Util {

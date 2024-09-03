@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletRequest;
  * 微信公众号：weh程序猿
  *
  * @author weh-coder
- * @des 这是一个类
+ * @des 验证 token
  * @date 2024/9/3
  */
 @Slf4j
