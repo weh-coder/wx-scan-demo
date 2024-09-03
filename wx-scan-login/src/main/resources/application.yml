@@ -1,0 +1,18 @@
+# 应用服务 WEB 访问端口
+server:
+  port: 8080
+
+spring:
+  # redis参数配置
+  data: #springboot版本3以下的要加data
+    redis:
+      host: 127.0.0.1
+      port: 6379
+      password: 123456
+      database: 0
+      lettuce:
+        pool:
+          min-idle: 10
+          max-idle: 100
+          max-active: 100
+          max-wait: 10000
